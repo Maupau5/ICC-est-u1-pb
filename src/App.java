@@ -5,9 +5,11 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
+        MetodoBusqueda metodoBusqueda = new MetodoBusqueda();
+
         ArrayList<Persona> listaPersonas = new ArrayList<>();  
 
-        System.out.print("Cantidad de personas que se dea ordenar");
+        System.out.print("Cantidad de personas que se dea ordenar: ");
         int cantidadPersonas = scanner.nextInt();
         scanner.nextLine(); 
 
@@ -28,7 +30,8 @@ public class App {
         for (Persona persona : listaPersonas) {
             persona.mostrarDatos();
         }
-        
+
+
 
         
     }
